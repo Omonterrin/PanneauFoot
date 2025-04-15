@@ -1,0 +1,19 @@
+# Commentaire 1
+# La fonction get_segment_mapping est appelée à chaque affichage de chiffre.
+# => Optimisable : précalculer et stocker les mappings pour chaque digit à l'initialisation.
+
+# Commentaire 2
+# La fonction show_number nettoie et met à jour les deux chiffres pour chaque appel, même sans changement.
+# => Amélioration possible : éviter les appels inutiles si la valeur ou la couleur n’a pas changé.
+
+# Commentaire 3
+# Les délais fixes (time.sleep) dans la boucle peuvent ralentir le traitement global.
+# => Meilleure approche : utiliser des flags ou timestamps pour éviter les rebonds sans bloquer.
+
+# Commentaire 4
+# Les boutons ne sont pas désactivés après appui (pas de détection d’état précédent).
+# => Ajouter un système de détection de front pour plus de réactivité et moins d'erreurs d’appui.
+
+# Commentaire 5
+# TOTAL_LEDS est bien calculé, mais si on ajoute d'autres éléments, le code devient fragile.
+# => Suggestion : encapsuler l'assignation des offsets et longueurs dans une fonction ou classe dédiée.
