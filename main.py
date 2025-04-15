@@ -4,6 +4,17 @@ from machine import Pin
 import time
 import neopixel
 
+#Segments:
+# -- A --
+#|       |
+#F       B
+#|       |
+# -- G --
+#|       |
+#E       C
+#|       |
+# -- D --
+
 # === CONFIGURATION ===
 LEDS_PER_SEGMENT = 9
 SEGMENTS = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
